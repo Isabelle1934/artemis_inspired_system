@@ -1,7 +1,6 @@
 #Objetivo final: Criar um sistema inteligente de simulação de missão espacial com análise de dados, automação e IA básica.
 #Missão 1: Sistema de Status de Astronauta
 
-
 boas_vindas = '========= Sistema de status de Astronautas - Nasa ========='
 
 nome_astronauta = input("Insira seu nome: ")
