@@ -3,13 +3,17 @@
 
 
 boas_vindas = '========= Sistema de status de Astronautas - Nasa ========='
-nome_astronauta = input("Insira seu nome: ")
-idade = input("Insira sua idade: ")
-nivel_treino = input("Insira seu nível de treinamento de 0-10: ")
-print(boas_vindas, nome_astronauta, idade, nivel_treino)
 
-number = 10
-if number > 9:
-  print('Você está apto para a missão!')
+nome_astronauta = input("Insira seu nome: ")
+idade = int(input("Insira sua idade: "))
+nivel_treino = int(input("Insira seu nível de treinamento de 0-10: "))
+
+print(boas_vindas)
+print("Nome:", nome_astronauta)
+print("Idade:", idade)
+print("Nível de treino:", nivel_treino)
+
+if nivel_treino >= 9:
+    print('Você está apto para a missão!')
 else:
-  print('Você não está apto para a missão!')
+    print('Você não está apto para a missão!')
