@@ -16,3 +16,33 @@ if nivel_treino >= 9:
     print('Você está apto para a missão!')
 else:
     print('Você não está apto para a missão!')
+
+
+
+Missão 2: Calculadora de Combustível
+Simule:
+Distância da missão
+Consumo por km
+Calcule combustível necessário
+
+Conceitos:
+operadores matemáticos
+funções (def)
+
+ex:
+
+def calcular_area(largura, altura):  # largura e altura são PARÂMETROS
+    return largura * altura
+
+resultado = calcular_area(5, 10)     # 5 e 10 são ARGUMENTOS
+
+Distância da missão:
+384.400 km
+Consumo por km da nave:
+12,5 kg de combustível por km
+
+def distancia(374.400):
+    return km
+
+
+
