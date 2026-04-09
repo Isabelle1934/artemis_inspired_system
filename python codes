@@ -49,4 +49,7 @@ def consumo_km(km, kg):
     return km * kg
 resultado = consumo_km(384.400, 12,5)
 
+def combustivel_necessario(km, kg):
+    return 
+
 
