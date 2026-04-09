@@ -41,8 +41,12 @@ Distância da missão:
 Consumo por km da nave:
 12,5 kg de combustível por km
 
-def distancia(374.400):
+def distancia(km):
     return km
+km = 384.400
 
+def consumo_km(km, kg):
+    return km * kg
+resultado = consumo_km(384.400, 12,5)
 
 
