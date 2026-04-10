@@ -18,38 +18,13 @@ else:
     print('Você não está apto para a missão!')
 
 
+#Missão 2: Calculadora de Combustível
 
-Missão 2: Calculadora de Combustível
-Simule:
-Distância da missão
-Consumo por km
-Calcule combustível necessário
+distancia = float(input("Digite a distância da missão (km): "))
+consumo_por_km = float(input("Digite o consumo da nave (kg por km): "))
 
-Conceitos:
-operadores matemáticos
-funções (def)
+def calcular_combustivel(distancia, consumo):
+    return distancia * consumo
 
-ex:
-
-def calcular_area(largura, altura):  # largura e altura são PARÂMETROS
-    return largura * altura
-
-resultado = calcular_area(5, 10)     # 5 e 10 são ARGUMENTOS
-
-Distância da missão:
-384.400 km
-Consumo por km da nave:
-12,5 kg de combustível por km
-
-def distancia(km):
-    return km
-km = 384.400
-
-def consumo_km(km, kg):
-    return km * kg
-resultado = consumo_km(384.400, 12,5)
-
-def combustivel_necessario(km, kg):
-    return 
-
-
+combustivel_total = calcular_combustivel(distancia, consumo_por_km)
+print(f"Combustível necessário: {combustivel_total:.2f} kg")
