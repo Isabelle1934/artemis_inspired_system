@@ -17,7 +17,6 @@ if nivel_treino >= 9:
 else:
     print('Você não está apto para a missão!')
 
-
 #Missão 2: Calculadora de Combustível
 
 distancia = float(input("Digite a distância da missão (km): "))
@@ -28,3 +27,24 @@ def calcular_combustivel(distancia, consumo):
 
 combustivel_total = calcular_combustivel(distancia, consumo_por_km)
 print(f"Combustível necessário: {combustivel_total:.2f} kg")
+
+#Missão 3: Checklist de Lançamento
+
+print("===== CHECKLIST DE LANÇAMENTO =====")
+
+itens = ["Combustível", "Clima", "Sistema Elétrico", "Pressão da Cabine"]
+
+status = []
+
+for item in itens:
+    resposta = input(f"{item} está OK? (s/n): ").lower()
+    
+    if resposta == "s":
+        status.append(True)
+    else:
+        status.append(False)
+        
+if all(status):
+    print("Lançamento AUTORIZADO!")
+else:
+    print("Lançamento ABORTADO!")
