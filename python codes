@@ -34,17 +34,19 @@ print("===== CHECKLIST DE LANÇAMENTO =====")
 
 itens = ["Combustível", "Clima", "Sistema Elétrico", "Pressão da Cabine"]
 
-status = []
+falhas = []
 
 for item in itens:
     resposta = input(f"{item} está OK? (s/n): ").lower()
     
-    if resposta == "s":
-        status.append(True)
-    else:
-        status.append(False)
-        
-if all(status):
+    if resposta != "s":
+        falhas.append(item)
+
+if len(falhas) == 0:
     print("Lançamento AUTORIZADO!")
 else:
     print("Lançamento ABORTADO!")
+    print("Falha nos seguintes sistemas:")
+    
+    for falha in falhas:
+        print(f"- {falha}")
